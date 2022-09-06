@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creation Page</title>
+</head>
+<body>
+    <h1>The submit Credentials</h1>
+	<form action="/" method="post">
+		{% csrf_token %}
+		<label>Username :</label>
+		<input type="text" name="username" required><br>
+	    <label>Password :</label>
+		<input type="text" name="password"><br>
+		<label>Database Name :</label>
+		<input type="text" name="dbname"><br>
+		<label>Bucket Name :</label>
+		<input type="text" name="bucketname"><br>
+		<input type="submit" value="Submit Form">
+	</form>
+</body>
+</html>
